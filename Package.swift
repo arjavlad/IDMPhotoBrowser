@@ -20,7 +20,10 @@ let package = Package(
         .target(
             name: "IDMPhotoBrowser",
             path: "Classes/",
-            exclude: []
+            exclude: [],
+            cSettings: [
+                 .headerSearchPath("Internal"),
+            ]
         )
     ]
 )
